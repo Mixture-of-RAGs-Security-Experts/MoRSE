@@ -17,7 +17,7 @@ def extract_questions():
     questions = []
     with open(r"question_test.txt", 'r', encoding='utf-8') as file:
         for line in file:
-            questions.append(line.strip())  # Also consider stripping newline characters
+            questions.append(line.strip())  
     return questions
 
 
@@ -45,27 +45,20 @@ def extract_gpt4_answers():
 def get_MoRSE_answers():
     file_path = "MoRSE_CVE.txt"
 
-    # Lista per memorizzare i dizionari
     data_list = []
 
-    # Leggi ogni riga del file di testo
     with open(file_path, "r") as file:
         for line in file:
-            # Rimuovi eventuali spazi bianchi in eccesso e nuove righe
             line = line.strip()
-            # Ignora le righe vuote
             if not line:
                 continue
-            # Converti la riga in un dizionario
             try:
                 data = json.loads(line)
                 data_list.append(data)
             except json.JSONDecodeError as e:
                 print(f"Errore nella riga JSON: {line}")
-    # Dizionario per memorizzare le query e le risposte complete
     query_responses = {}
     queries = []
-    # Ora data_list contiene tutti i dizionari letti dal file
     for answer in data_list:
         query = answer['query'].strip()
         response = answer["Answer"]
@@ -78,10 +71,8 @@ def get_MoRSE_answers():
     return query_responses
 
 def evalaute(question, ground_truth, answer):
-    deployment_name='####' #This will correspond to the custom name you chose for your deployment when you deployed a model. 
-    # Send a completion call to generate an answer
+    deployment_name='####' 
     print(f'[!] Answering question: {question}')
-    #system_prompt = """Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user question displayed below. Your evaluation should consider correctness and helpfulness. You will be given a reference answer, assistant A's answer, and assistant B's answer. Your job is to evaluate which assistant's answer is better. Begin your evaluation by comparing both assistants' answers with the reference answer. Identify and correct any mistakes. Avoid any position biases and ensure that the order in which the responses were presented does not influence your decision. Do not allow the length of the responses to influence your evaluation. Do not favor certain names of the assistants. Be as objective as possible. After providing your explanation, output your final verdict by strictly following this format: \"[[A]]\" if assistant A is better, \"[[B]]\" if assistant B is better, and \"[[C]]\."""
     system_prompt = """###Task Description:
         A Question, a response to evaluate, a reference answer that gets a score of 5, and a score rubric representing a evaluation criteria are given.
         1. Write a detailed feedback that assess the quality of the response strictly based on the given score rubric, not evaluating in general.
@@ -95,7 +86,6 @@ def evalaute(question, ground_truth, answer):
         Score 3: The response is somewhat correct, accurate, and/or factual.
         Score 4: The response is mostly correct, accurate, and factual.
         Score 5: The response is completely correct, accurate, and factual."""
-    #prompt_template = f"[User Question]\n{question}\n\n[The Start of Reference Answer]\n{ground_truth}\n[The End of Reference Answer]\n\n[The Start of Assistant A's Answer]\n{answer_GPT}\n[The End of Assistant A's Answer]\n\n[The Start of Assistant B's Answer]\n{answer_MoRSE}\n[The End of Assistant B's Answer]"
 
     prompt_template = f"###The Question: {question} ###Response to evaluate: {answer} ###Reference Answer (Score 5):{ground_truth}"
     messages=[
@@ -114,14 +104,10 @@ def evalaute(question, ground_truth, answer):
     
 def set_ground_truth():
     file_path = "CVE_GROUND_TRUTH.txt"
-    # Lista per memorizzare i dizionari
     data_list = []
-    # Leggi ogni riga del file di testo
     with open(file_path, "r") as file:
         for line in file:
-            # Rimuovi eventuali spazi bianchi in eccesso e nuove righe
             line = line.strip()
-            # Ignora le righe vuote
             if not line:
                 continue
             try:
@@ -131,7 +117,6 @@ def set_ground_truth():
                 print(f"Errore nella riga JSON: {line}")
                 print(e)
     data_dict = {item['CVE']: item['text'] for item in data_list}
-    #print(data_dict)
     return data_dict
 
 
@@ -151,13 +136,11 @@ def process_text_file(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
 
-    # Splitting the text at '---' to separate different vulnerabilities
     sections = content.split('---')
 
     cve_dict = {}
 
     for section in sections:
-        # Finding the CVE number using regular expressions
         import re
         match = re.search(r'(CVE-\d{4}-\d+)', section)
         if match:
