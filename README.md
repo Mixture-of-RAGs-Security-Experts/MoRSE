@@ -1,7 +1,6 @@
 # MoRSE - Mixture of RAG Security Experts
 
 ![Licenza MIT](https://img.shields.io/badge/license-MIT-green)
-![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCBkNpeyvBO2TdPGVC_PsPUA?style=social)
 
 
 Welcome to the official repository of MoRSE, a groundbreaking framework in the cybersecurity domain that synergizes the generative capabilities of Large Language Models (LLMs) with the precision of specialized information retrievers. MoRSE stands at the vanguard of cybersecurity solutions, offering meticulously structured responses to a wide spectrum of cybersecurity queries.
