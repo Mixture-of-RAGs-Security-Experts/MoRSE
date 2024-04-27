@@ -9,7 +9,7 @@ Welcome to the official repository of MoRSE, a groundbreaking framework in the c
 ## Watch MoRSE in Action on YouTube
 
 Dive into a comprehensive demonstration of MoRSE on YouTube to see our cutting-edge framework in operation, ensuring the fortification of digital infrastructures against evolving cyber threats.
-[![Watch MoRSE on YouTube](https://github.com/winstonsmith1897/MoRSE-Mixture-of-RAG-Security-Experts/blob/main/MoRSE_ICON.png)](https://youtu.be/TjpCZg36ZUk)
+[![Watch MoRSE on YouTube](https://github.com/winstonsmith1897/MoRSE-Mixture-of-RAG-Security-Experts/blob/main/MoRSE_ICON.png)](https://youtu.be/nsI1HCUVDSc)
 
 This video will provide you with a detailed overview of MoRSE's capabilities.
 
