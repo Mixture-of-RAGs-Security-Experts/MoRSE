@@ -14,11 +14,12 @@ Dive into a comprehensive demonstration of MoRSE on YouTube to see our cutting-e
 This video will provide you with a detailed overview of MoRSE's capabilities.
 
 ## Features of MoRSE
+Despite the usefulness of Large Language Models (LLMs) in various fields, they cannot provide reliable results in technical and constantly evolving topics such as cybersecurity, as they can produce inaccurate or hallucinatory content. This emphasises the need to constantly update their knowledge bases with the latest information. The integration of Retrieval Augmented Generation (RAG) is emerging as a solution. It is predicted that by 2025, two-thirds of organisations will use this technology to find domain-specific knowledge, which will improve decision-making efficiency by 50\%.
 
-- **Real-Time Insights**: MoRSE provides immediate access to the latest cybersecurity threats and advisories, bridging the knowledge gap with an intuitive platform.
-- **Scalable Solutions**: Tailored for both individual users and SMEs, MoRSE offers scalable cybersecurity measures without imposing financial burdens.
-- **Synergized Expertise**: By integrating LLMs with parallel retrieval processes, MoRSE delivers precise, comprehensive answers across the cybersecurity domain, surpassing traditional cybersecurity frameworks.n.
+In this repo, we introduce the first specialised AI chatbot for cybersecurity MoRSE (Mixture of RAGs Security Experts), which aims to provide comprehensive and complete knowledge about cybersecurity.
+MoRSE uses two Retrieval Augmented Generation (RAG) systems designed to provide clear, structured, and accurate answers to cybersecurity queries. Unlike traditional Large Language Models (LLMs) that rely on Parametric Knowledge Bases, MoRSE retrieves relevant documents from Non-Parametric Knowledge Bases in response to user queries. It then uses this information to generate accurate answers, improving cybersecurity accuracy and reliability. In addition, MoRSE benefits from real-time updates to its knowledge bases, enabling continuous knowledge enrichment without retraining.
 
+The experimental evaluation has shown that the improvement in terms of relevance and correctness of the answer is more than 10\% compared to known solutions such as GPT-4 and Mixtral 7x8.
 ## MoRSE in Visuals
 
 To give you a better understanding of how MoRSE operates and its key functionalities, here are some visual insights:
