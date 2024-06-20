@@ -5,6 +5,7 @@
 
 Welcome to the official repository of MoRSE, a groundbreaking framework in the cybersecurity domain that synergizes the generative capabilities of Large Language Models (LLMs) with the precision of specialized information retrievers. MoRSE stands at the vanguard of cybersecurity solutions, offering meticulously structured responses to a wide spectrum of cybersecurity queries.
 
+Knowlegde Bases and Data can be accessed at this link: https://drive.google.com/drive/folders/1gNRlb18Q9iw0cllYGxbdp2V8wZLkR3H2
 
 ## Watch MoRSE in Action on YouTube : https://youtu.be/nsI1HCUVDSc
 
