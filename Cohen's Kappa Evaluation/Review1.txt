@@ -1,0 +1,50 @@
+[Correct] What is MAJORCA?
+[Correct] How does MAJORCA automatically generate ROP and JOP payloads for x86 and MIPS?
+[Correct] What does MAJORCA outperform?
+[Correct] What is AFLSmart?
+[Correct] What is Stand-in Backdoor?
+[Partially Correct] How can the attacker inject mappings of triggers and misclassification rules into the victim model?
+[Correct] What is the key to performing DNS brute forcing?
+[Correct] FluBot and Exodus Spyware are the most recent and notorious examples of what? 
+[Correct] Fuze and KOOBE are two studies that target what two types of memory? 
+[Partially Correct] What reflects the persistent efforts of cybercriminals to bypass security measures and exploit new vulnerabilities? 
+[Correct] When did Beast emerge?
+[Partially Correct] When was Beast released?
+[Correct] Ransomware originated with the AIDS Trojan and evolved with what programs?
+[Correct] How can we run and test the binary of MCU firmware via dynamic symbolic execution at scale and support the interrupt on demand?
+[Correct] How does fixing vulnerabilities depend heavily on manually generating repair templates?
+[Correct] What is the purpose of mutating the inputs that may alter the program execution path to generate well-formed test inputs?
+[Correct] What is a dynamic symbolic execution mechanism specifically designed for USB controller firmware?
+[Correct] How does fixing vulnerabilities depend heavily on manually generating repair templates?
+[Correct] What is APR?
+[Correct] What are some APR studies focused on?
+[Correct] How many RCRO chains does the countermeasure need to be effective on the ZCU104 board?
+[Correct] How many unknown hardware bugs were found in SurgeFuzz?
+[Correct] What is the scheduling algorithm to angr in order to improve the efficiency of performing?
+[Correct] How can Buttercup be used to detect off-by-one overflows?
+[Correct] What is the problem of determining the return address to exploit a buffer overflow vulnerability?
+[Partially Correct] What is DR. CHECKER?
+[Correct] What is the name of the bug detector used by DR. CHECKER?
+[Correct] What mechanism enables dynamic symbolic execution to effectively cover diverse interrupt-dependent code in the firmware?
+[Partially Correct] How does Buttercup detect real-time traffic containing an attack?
+[Correct] How does BOWAll protect against buffer over-flows?
+[Correct] What is ADMutate?
+[Correct] What exploited network vulnerabilities and used social engineering to spread and infect millions of computers?
+[Correct] Where were almost all design bugs in the OpenSPARC processor found?
+[Correct] What is the major difference between fuzzing in RTL designs and CPU designs?
+[Correct] DirectFuzz intensively verifies a target module by preferentially mutating inputs that increase the coverage of modules close to what?
+[Correct] DirectFuzz can explore a specific part of the state space but is not able to explore the corner case in what?
+[Correct] What demonstrates that SurgeFuzz can generate surge-inducing programs more effectively than the existing methods?
+[Correct] What shows that SurgeFuzz can detect various bugs faster and with higher probability than the existing methods?
+[Correct] What was the first researcher to determine that Stuxnet was a cyberwarfare attack against Iran?
+[Correct] What happens when Stuxnets dropper loads rogue code to the controller?
+[Correct] What is the infamous DEADFOOT condition?
+[Correct] How many commits did SeqTrans fix in 205 Java projects?
+[Correct] What does ADMutate dynamically modify?
+[Correct] What did Buttercup compare to Snort?
+[Correct] What is a more significant factor in QoS degradation than cryptographic cost?
+[Correct] The 802.1x-EAP-TLS policy is best suitable for what?
+[Correct] What is the name of the novel approach to exploit historical vulnerability fixes?
+[Correct] What does SeqTrans: Automatic Vulnerability Fix Via Sequence to Sequence Learning do?
+[Correct] SeqTrans outperforms the latest techniques and achieves what percentage in statement-level fix?
+[Correct] What has been developed to provide valuable insights into the types and locations of bugs that exist in critical kernel code?
