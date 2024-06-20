@@ -1,0 +1,5 @@
+To calculate the impact of each retriever on 300 questions (general Qs and MultiHop Qs), we proceeded as follows:
+
+Data collection: we collected all contexts created for the 150 general questions and the 150 MultiHop questions.
+Analysis: For each question category, we analyzed how often each retriever succeeded in retrieving relevant information.
+Calculation: We calculated the frequency of retrieval of relevant information by each retriever and expressed it as a percentage of the total questions in that category.
