@@ -1,0 +1,8 @@
+This formula is used to calculate the sample size (n) required for the study based on the population (N), 
+the Z-value for the selected confidence level, the assumed population proportion (P) and the margin of error (E). 
+For our study, the parameters were set as follows: 
+- The population (N) was 300, 
+- The population proportion (P) was assumed to be 0.5
+- the margin of error (E) was set at 10%. 
+
+This resulted in a sample size of 50 questions. 
